@@ -1,0 +1,572 @@
+{
+  "scope": "Experimental radio and diagnostic profiles only; source ownership is not hardware ABI qualification",
+  "providers": {
+    "lib/libOmxAacEnc.so": {
+      "module": "libOmxAacEnc",
+      "built": "out-trusty/target/product/m1/obj/lib/libOmxAacEnc.so",
+      "source_directories": [
+        "hardware/qcom/audio-caf/msm8916/mm-audio/aenc-aac/qdsp6"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libOmxAacEnc.so",
+      "original_sha256": "0118ac47b1dd41f3e67be2fdd547d62618d19f9990eebc90bd293e7f7571963d",
+      "compiled_sha256": "337e6c7f9fa5be819d185a5f5ab173f1c2eccdcbc1cf7d2a65068527805b4818"
+    },
+    "lib/libOmxAmrEnc.so": {
+      "module": "libOmxAmrEnc",
+      "built": "out-trusty/target/product/m1/obj/lib/libOmxAmrEnc.so",
+      "source_directories": [
+        "hardware/qcom/audio-caf/msm8916/mm-audio/aenc-amrnb/qdsp6"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libOmxAmrEnc.so",
+      "original_sha256": "0cabd1252bcace1d76d8b0ab74eb997a2357bf106f19e5a455dae447064e10ad",
+      "compiled_sha256": "64fd42cbe7e8089d42c37320bd1f18e6cf1741fdbddbe36f04cd2ea99ed2d150"
+    },
+    "lib/libOmxCore.so": {
+      "module": "libOmxCore",
+      "built": "out-trusty/target/product/m1/obj/lib/libOmxCore.so",
+      "source_directories": [
+        "hardware/qcom/media-caf/msm8916/mm-core"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libOmxCore.so",
+      "original_sha256": "68dab1dcd8cd012a1a716eb70d4f401e11b83502f54776537831e6c0af84c062",
+      "compiled_sha256": "2ad386626910ab9ed7a95925b9527cf8fdac69edddd274102fa9ab3ae44db53b"
+    },
+    "lib/libOmxEvrcEnc.so": {
+      "module": "libOmxEvrcEnc",
+      "built": "out-trusty/target/product/m1/obj/lib/libOmxEvrcEnc.so",
+      "source_directories": [
+        "hardware/qcom/audio-caf/msm8916/mm-audio/aenc-evrc/qdsp6"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libOmxEvrcEnc.so",
+      "original_sha256": "9a6df45376132525d5630b2d39379944f154c041ba2c2bab2ea404307f749583",
+      "compiled_sha256": "7a1798aa773974b4078128240242ae8f2a46246c3b2c86d8380c169b39cfd017"
+    },
+    "lib/libOmxQcelp13Enc.so": {
+      "module": "libOmxQcelp13Enc",
+      "built": "out-trusty/target/product/m1/obj/lib/libOmxQcelp13Enc.so",
+      "source_directories": [
+        "hardware/qcom/audio-caf/msm8916/mm-audio/aenc-qcelp13/qdsp6"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libOmxQcelp13Enc.so",
+      "original_sha256": "da48cd2fc06408b830917abdd844353f8513b58dd18718e8508ab77f7fbf5bfb",
+      "compiled_sha256": "51bb225adca76e354d1d7742071640d660688c59a48ccfb61c2f8f06c765ae40"
+    },
+    "lib/libOmxVdec.so": {
+      "module": "libOmxVdec",
+      "built": "out-trusty/target/product/m1/obj/lib/libOmxVdec.so",
+      "source_directories": [
+        "hardware/qcom/media-caf/msm8916/mm-video-v4l2/vidc/vdec"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libOmxVdec.so",
+      "original_sha256": "9967a0d83bd74ac3f7a4c47b0355c448ddcc5a60290dc042b4271a32bce46844",
+      "compiled_sha256": "0aaa14433deee6b5e1a082a163724357717cc9256b850415acee5e53f7442b02"
+    },
+    "lib/libOmxVenc.so": {
+      "module": "libOmxVenc",
+      "built": "out-trusty/target/product/m1/obj/lib/libOmxVenc.so",
+      "source_directories": [
+        "hardware/qcom/media-caf/msm8916/mm-video-v4l2/vidc/venc"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libOmxVenc.so",
+      "original_sha256": "9b3a494358ab1dbefad1aee71a52c6d5b977aee0d9eb5ca57a62506cae11d391",
+      "compiled_sha256": "bea0ab62b5c20075807206a8655d71d09def65cca285a0301a652630e42c6006"
+    },
+    "lib/libQWiFiSoftApCfg.so": {
+      "module": "libQWiFiSoftApCfg",
+      "built": "out-trusty/target/product/m1/obj/lib/libQWiFiSoftApCfg.so",
+      "source_directories": [
+        "system/qcom/softap/jni"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libQWiFiSoftApCfg.so",
+      "original_sha256": "bf4cb7794fe837308733b8ece65c143d4571a7fff226a50ba77194e9ad62c5be",
+      "compiled_sha256": "19d8b579bc1d0685264b6181247ca2aa9e6f84222467eeebc00139b14552976b"
+    },
+    "lib/libandroid.so": {
+      "module": "libandroid",
+      "built": "out-trusty/target/product/m1/obj/lib/libandroid.so",
+      "source_directories": [
+        "frameworks/base/native/android"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libandroid.so",
+      "original_sha256": "c44f632fe2f2cbb24f59b76b8ecc1badb3f22415681cd65d04c593f0f20b9270",
+      "compiled_sha256": "514c78e3d7a7fe19709d3a8e43b08a91e81edaada0ccccf7f9e9a6cbaf5ec44d"
+    },
+    "lib/libandroid_servers.so": {
+      "module": "libandroid_servers",
+      "built": "out-trusty/target/product/m1/obj/lib/libandroid_servers.so",
+      "source_directories": [
+        "frameworks/base/services"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libandroid_servers.so",
+      "original_sha256": "aea359ae213a00ae9dc6ac276755ee1cd1a00dc9afe9ca6ad3ecbea968c9cf32",
+      "compiled_sha256": "3c4730345ca73b6fdb52d7a693c85b19c33453d190e06c322ce6806863e7839a"
+    },
+    "lib/libaudio-resampler.so": {
+      "module": "libaudio-resampler",
+      "built": "out-trusty/target/product/m1/obj/lib/libaudio-resampler.so",
+      "source_directories": [
+        "frameworks/av/services/audioflinger/audio-resampler"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libaudio-resampler.so",
+      "original_sha256": "d0ebbbe6056697da93c3f85abd33e58f891da998d34e23a54a9ea89c2c9b43f2",
+      "compiled_sha256": "87af9b66864856fc43775801a41f4035191e09061582083447bfb66c4ceae325"
+    },
+    "lib/libaudioroute.so": {
+      "module": "libaudioroute",
+      "built": "out-trusty/target/product/m1/obj/lib/libaudioroute.so",
+      "source_directories": [
+        "system/media/audio_route"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libaudioroute.so",
+      "original_sha256": "54716175e2253d6ef2ef742532da531b8c352a5a64adf1eaf445a813a77b3f48",
+      "compiled_sha256": "ad897520bf136b4513b791f1b5cc6febb84c392e81148d11a1c97f5793a5119a"
+    },
+    "lib/libc2dcolorconvert.so": {
+      "module": "libc2dcolorconvert",
+      "built": "out-trusty/target/product/m1/obj/lib/libc2dcolorconvert.so",
+      "source_directories": [
+        "hardware/qcom/media-caf/msm8916/libc2dcolorconvert"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libc2dcolorconvert.so",
+      "original_sha256": "ded6b10679b20ef07aa20fe5434f547f4648d9f0ea3a75f9963b56a3604bfdca",
+      "compiled_sha256": "fd116bce09261de740e33a0c81885649dd6d2b34d97b5cc8c272cc470ff9dd7f"
+    },
+    "lib/libcnefeatureconfig.so": {
+      "module": "libcnefeatureconfig",
+      "built": "out-trusty/target/product/m1/obj/lib/libcnefeatureconfig.so",
+      "source_directories": [
+        "external/connectivity/cnefeatureconfig"
+      ],
+      "original_copied_source": "vendor/lge/m1/radio-stock/lib/libcnefeatureconfig.so",
+      "original_sha256": "b553d87535818dcbb7478731a690b6bb0ecf4a15d1d379cb4cf05c6b9fb513e7",
+      "compiled_sha256": "a6dcfafa10c3f39a929651b05a138e953fcefdd586931c56671f9c94e3d71432"
+    },
+    "lib/libcurl.so": {
+      "module": "libcurl",
+      "built": "out-trusty/target/product/m1/obj/lib/libcurl.so",
+      "source_directories": [
+        "external/curl"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libcurl.so",
+      "original_sha256": "1842fcc0893cd48f88ac4f78490658f26f6710af6d65e3c575432eb78a16fa4c",
+      "compiled_sha256": "bb5e3982d9ed19a61948ba9607713b9c7a6c90d00dca6603c5fcb002a88780ed"
+    },
+    "lib/libebt_802_3.so": {
+      "module": "libebt_802_3",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_802_3.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_802_3.so",
+      "original_sha256": "425726d36e78c170e5e2ada87b817821bd1f1b8505531c1f4ec1cef800bb042e",
+      "compiled_sha256": "8399dac4cfce2caa23f619f0d9ae5a755915b774bb902c60d15c8e52bea2f49e"
+    },
+    "lib/libebt_among.so": {
+      "module": "libebt_among",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_among.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_among.so",
+      "original_sha256": "4ac8022a4fdeec4310daa0457f0bddb08ef8348af4df5763c73a6b9b2d36be96",
+      "compiled_sha256": "deb9f7817854cef8e907a690406e00301beb0178745859e1ac8894e9020b42a9"
+    },
+    "lib/libebt_arp.so": {
+      "module": "libebt_arp",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_arp.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_arp.so",
+      "original_sha256": "7ff026469f00e62d280cb16139ec19945533408155b2a62dbe1183afc0cf8033",
+      "compiled_sha256": "f43b0d1db0114cbc591669804a5596393460814dc06f305c5e858625106b5f73"
+    },
+    "lib/libebt_arpreply.so": {
+      "module": "libebt_arpreply",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_arpreply.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_arpreply.so",
+      "original_sha256": "d2f7f21544c76218b5507d8c26f2ec78581359d96f0eacf6dca2ed218d61b785",
+      "compiled_sha256": "54fd2c110e8a03b911d29fa7e6163580007f1208849d9b5f88d27a87b802ed12"
+    },
+    "lib/libebt_ip.so": {
+      "module": "libebt_ip",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_ip.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_ip.so",
+      "original_sha256": "0ae2e5faeca613e21e8a932d93d8adcb5486d0562ea046b4ce514f475a1c1339",
+      "compiled_sha256": "0935549ca4adca1662fdb7506aa98c7b212d332650cee4f5a6f9a56f62de0f46"
+    },
+    "lib/libebt_ip6.so": {
+      "module": "libebt_ip6",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_ip6.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_ip6.so",
+      "original_sha256": "ca3cb147c5d7d068d89786c5f2334da710e3f78c1176a7ae3d64537e0614f0f8",
+      "compiled_sha256": "2551b1082bfdeaf1952ba740f73c62b55e07a2454a94e4c3577fc59ba450a3a1"
+    },
+    "lib/libebt_limit.so": {
+      "module": "libebt_limit",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_limit.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_limit.so",
+      "original_sha256": "0601d38998d48ddaca4519c82ed4d2cdc2526f7c3228196640796fa83331c9cf",
+      "compiled_sha256": "6cfee0f844e2d0571aadf4118612a0c5dda72d03229d0a7d75149989efe88f5a"
+    },
+    "lib/libebt_log.so": {
+      "module": "libebt_log",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_log.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_log.so",
+      "original_sha256": "50389ebfbdfe67768dac068c14d32d29903a1b96f015224bbb0d2dfc1945330d",
+      "compiled_sha256": "9962bdd4cb818e725619bc49bb4eb9337d59f40291976e9346084ee7b3c0fbfe"
+    },
+    "lib/libebt_mark.so": {
+      "module": "libebt_mark",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_mark.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_mark.so",
+      "original_sha256": "6e9af55d9b8fbcb37d0009687a147f01692c0f3cbd0f008c51e67625b7d6fff8",
+      "compiled_sha256": "f1131be4653affbff5e6a4747548418f9234592265d6d9095455ed550a6dfbe0"
+    },
+    "lib/libebt_mark_m.so": {
+      "module": "libebt_mark_m",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_mark_m.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_mark_m.so",
+      "original_sha256": "e8cd8ec81d43f42c12439bc810794ef5bb7ec9832e50a6b807f2697aaeb7fe2f",
+      "compiled_sha256": "aa4845bd38815458edc4b76c3e09fe3dc4c2b71b918aad225a807d8a970914f7"
+    },
+    "lib/libebt_nat.so": {
+      "module": "libebt_nat",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_nat.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_nat.so",
+      "original_sha256": "dd11369c1d476d524e2a025e281b410b2bcccd8e20f495106bf577f26ab48937",
+      "compiled_sha256": "23042cbc0da17e04940fcbe6698c9dfbbca2f4f0e28c51d49c03d46ce7086d3e"
+    },
+    "lib/libebt_nflog.so": {
+      "module": "libebt_nflog",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_nflog.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_nflog.so",
+      "original_sha256": "1f9a0a32f7402cbd2a5f67feada5468d883f83d2109832184966d00a20e82ba9",
+      "compiled_sha256": "acdcbf388fe9cd746b01173394db88cd94e9bf6136ec81f2812547f0c868504f"
+    },
+    "lib/libebt_pkttype.so": {
+      "module": "libebt_pkttype",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_pkttype.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_pkttype.so",
+      "original_sha256": "7bcfc389162fd2445c53e83940bc470ffa433a9f774858192217d9ed95bf4e79",
+      "compiled_sha256": "fbf8c7e3a06b8d65071cd55eadcab5859a46f84b2fb3999c3ceaa2dfb4ffea3b"
+    },
+    "lib/libebt_redirect.so": {
+      "module": "libebt_redirect",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_redirect.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_redirect.so",
+      "original_sha256": "04989aa8c8db60b423d874d2164fc64eacbe1fd4a100f007bdf5693b5c85221e",
+      "compiled_sha256": "f0b7a46940024eb670f22060f2d944edda7ecf89e6ef6d2cf65acd144e74b312"
+    },
+    "lib/libebt_standard.so": {
+      "module": "libebt_standard",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_standard.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_standard.so",
+      "original_sha256": "c681c6dd66fbd3fb04a90b23ec5b8af1a054298860645e68f85e174bbd01c4b0",
+      "compiled_sha256": "bb947c6525815aecd20cdd5e049694be25479b84d50a4065b260849210be11dc"
+    },
+    "lib/libebt_stp.so": {
+      "module": "libebt_stp",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_stp.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_stp.so",
+      "original_sha256": "dcb3d6c583920122491cd78850c74e1c660766307fc47a3e04fddefa1095b265",
+      "compiled_sha256": "8c53baa0c1ada8fa2dfcb08b906ee054ae8a441cdce58037e546acb3328d20c4"
+    },
+    "lib/libebt_ulog.so": {
+      "module": "libebt_ulog",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_ulog.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_ulog.so",
+      "original_sha256": "84fccc8f451d8202db8b9cdb97564d5b3358be4c73aca92dee0b2ab4ad5c1fdc",
+      "compiled_sha256": "e7707236debac2ae2e6634372975dcf5a09f7f2f72862c08eaf371ad9c1a82fa"
+    },
+    "lib/libebt_vlan.so": {
+      "module": "libebt_vlan",
+      "built": "out-trusty/target/product/m1/obj/lib/libebt_vlan.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebt_vlan.so",
+      "original_sha256": "e73834642e51addf61a329ec15947e2e70fb82360669ca93a9d42e6a3e96ca58",
+      "compiled_sha256": "3e667985eb09158a8ae0eb3ebe876063d93fbf91b5dfa759c0f8b5f14090b54b"
+    },
+    "lib/libebtable_broute.so": {
+      "module": "libebtable_broute",
+      "built": "out-trusty/target/product/m1/obj/lib/libebtable_broute.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebtable_broute.so",
+      "original_sha256": "b4d0857133b4afac57a004b7b40bb4761f02a68aa25b92201f5567be0a6b4f88",
+      "compiled_sha256": "2630936154c92563b0ec19fe6061641b4fe1153de23b33c109c4c5442353ce5d"
+    },
+    "lib/libebtable_filter.so": {
+      "module": "libebtable_filter",
+      "built": "out-trusty/target/product/m1/obj/lib/libebtable_filter.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebtable_filter.so",
+      "original_sha256": "370d358fbd94fe35e0b79b8523e31683533e46feb366e3e04ba38c0912563f9a",
+      "compiled_sha256": "d247994f0b0bb374283a809d6d624e82372949ebc5c8c866332e8fe0f6fcf36c"
+    },
+    "lib/libebtable_nat.so": {
+      "module": "libebtable_nat",
+      "built": "out-trusty/target/product/m1/obj/lib/libebtable_nat.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebtable_nat.so",
+      "original_sha256": "848b53ff667c3a2d34ee318141cdc4062f6c000b101e36f545dd8068b6c61969",
+      "compiled_sha256": "93fee977d2ce0fe52866f03a7f6c418a77f319055bd0eb1ec7db6deac16eed20"
+    },
+    "lib/libebtc.so": {
+      "module": "libebtc",
+      "built": "out-trusty/target/product/m1/obj/lib/libebtc.so",
+      "source_directories": [
+        "external/ebtables/userspace/ebtables2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libebtc.so",
+      "original_sha256": "c8fe4fca4b547fe8124d10c4ee98786399275289295c25658ac60a2ea3f27624",
+      "compiled_sha256": "012cda274f811de9e09d4766ca6779b5cc6ce511d7d135a04315eaf7b3cbce98"
+    },
+    "lib/libemoji.so": {
+      "module": "libemoji",
+      "built": "out-trusty/target/product/m1/obj/lib/libemoji.so",
+      "source_directories": [
+        "frameworks/opt/emoji"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libemoji.so",
+      "original_sha256": "0c1d10eadeccffa772e7c53bb6bd3565938e7354258d81ee64852580d19a6700",
+      "compiled_sha256": "1ee889954c60848762b7f5e7e7dc3d798a6ad658126ed3615a5b7a655328b050"
+    },
+    "lib/libhdmi.so": {
+      "module": "libhdmi",
+      "built": "out-trusty/target/product/m1/obj/lib/libhdmi.so",
+      "source_directories": [
+        "hardware/qcom/display-caf/msm8916/libhdmi"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libhdmi.so",
+      "original_sha256": "875c7827120aaba3225129451585d47c5680fa0fe206aede0de7cf80ca6ed8ba",
+      "compiled_sha256": "d082e579fbb8ec949523132c81a994b5f9145f120939130de70f1d689855517a"
+    },
+    "lib/libiprouteutil.so": {
+      "module": "libiprouteutil",
+      "built": "out-trusty/target/product/m1/obj/lib/libiprouteutil.so",
+      "source_directories": [
+        "external/iproute2/lib"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libiprouteutil.so",
+      "original_sha256": "cd6716e7181b4a2cea2d76dcc94bcd51ef7450ee609739352ec2e2b7edeaa16a",
+      "compiled_sha256": "42144196ad3e3c8d8e33c77929056105257802115544c651f809eabcf7111175"
+    },
+    "lib/libmemalloc.so": {
+      "module": "libmemalloc",
+      "built": "out-trusty/target/product/m1/obj/lib/libmemalloc.so",
+      "source_directories": [
+        "hardware/qcom/display-caf/msm8916/libgralloc"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libmemalloc.so",
+      "original_sha256": "46db99914b29f4de17b022458fe69eef3aee71cea8418c3f5d7f8af5233be050",
+      "compiled_sha256": "eeb7bc0fd4cdfbde1d232ff96b4de06d5f04a63f68522bc173d5756bc8f49273"
+    },
+    "lib/libminui.so": {
+      "module": "libminui",
+      "built": "out-trusty/target/product/m1/obj/lib/libminui.so",
+      "source_directories": [
+        "bootable/recovery/minui"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libminui.so",
+      "original_sha256": "89a836a639f93a7be13e14ecdea012614ffc05db9240d499fba26a2ebb460fa9",
+      "compiled_sha256": "684c59119e4bb5fb94db2af610707e459d647100d962b78ac891739e685c1fe8"
+    },
+    "lib/libmm-omxcore.so": {
+      "module": "libmm-omxcore",
+      "built": "out-trusty/target/product/m1/obj/lib/libmm-omxcore.so",
+      "source_directories": [
+        "hardware/qcom/media-caf/msm8916/mm-core"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libmm-omxcore.so",
+      "original_sha256": "c96fb6b1b95cd74eb79e031ed9b48d67d68d642b85031c4bf5baa7c4e74d973b",
+      "compiled_sha256": "ceac38de49f1c0457a145124d6b60d0cb38354d6eb9d47aca53db35b0a54bf57"
+    },
+    "lib/libnetfilter_conntrack.so": {
+      "module": "libnetfilter_conntrack",
+      "built": "out-trusty/target/product/m1/obj/lib/libnetfilter_conntrack.so",
+      "source_directories": [
+        "external/libnetfilter_conntrack"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libnetfilter_conntrack.so",
+      "original_sha256": "4f4b5480cd25bf994cb76548e7b512d6f7ee62e1da192248ebdb2042feb68df2",
+      "compiled_sha256": "8023e1e65ff6d304c0e3266f44db0234e9e30df87ec5da67e4641d284d12fe34"
+    },
+    "lib/libnetlink.so": {
+      "module": "libnetlink",
+      "built": "out-trusty/target/product/m1/obj/lib/libnetlink.so",
+      "source_directories": [
+        "external/iproute2/lib"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libnetlink.so",
+      "original_sha256": "8eb68e85372ebee3be1c805ee6f07e210f3b5c35930beecf3b69362d60168e2c",
+      "compiled_sha256": "6db9026deaffb910151ee84de493343163f16a60386114243823e76ed5538a41"
+    },
+    "lib/libnfnetlink.so": {
+      "module": "libnfnetlink",
+      "built": "out-trusty/target/product/m1/obj/lib/libnfnetlink.so",
+      "source_directories": [
+        "external/libnfnetlink"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libnfnetlink.so",
+      "original_sha256": "32aadc04b4e32c657aaf9128e86d25aedfc73d6317ba47c93a28146119c0afb6",
+      "compiled_sha256": "7110924c67917530eb2db70b488656f9176c8da3ffab1146161c9c42dc4862c3"
+    },
+    "lib/liboverlay.so": {
+      "module": "liboverlay",
+      "built": "out-trusty/target/product/m1/obj/lib/liboverlay.so",
+      "source_directories": [
+        "hardware/qcom/display-caf/msm8916/liboverlay"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/liboverlay.so",
+      "original_sha256": "6c054fc6aa7d833a7b8e48d46d30f4bc068b534c6edcc062d2feeecd0a701791",
+      "compiled_sha256": "83d0dba15187958a5dd400d2557554cbfde3e4003bebf1cc3bbba55ba8e3cd6b"
+    },
+    "lib/libqdMetaData.so": {
+      "module": "libqdMetaData",
+      "built": "out-trusty/target/product/m1/obj/lib/libqdMetaData.so",
+      "source_directories": [
+        "hardware/qcom/display-caf/msm8916/libqdutils"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libqdMetaData.so",
+      "original_sha256": "e70a53925d03f98bab5dc76fe0f614f77a6359e97243e2dd8029ec51f21f4b39",
+      "compiled_sha256": "0cdedabbfd9df3968474e7d27a76878992d9201a331ce408301183cdfac66176"
+    },
+    "lib/libqdutils.so": {
+      "module": "libqdutils",
+      "built": "out-trusty/target/product/m1/obj/lib/libqdutils.so",
+      "source_directories": [
+        "hardware/qcom/display-caf/msm8916/libqdutils"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libqdutils.so",
+      "original_sha256": "1ee9ac1a343abf85e30ea7e4bbe90d73128a12dfcb477ec8f4ed856f2785c520",
+      "compiled_sha256": "005c85a26533013aba077163631451c606b6c9877a1dd6c61d58f806185d0c3b"
+    },
+    "lib/libqsap_sdk.so": {
+      "module": "libqsap_sdk",
+      "built": "out-trusty/target/product/m1/obj/lib/libqsap_sdk.so",
+      "source_directories": [
+        "system/qcom/softap/sdk"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libqsap_sdk.so",
+      "original_sha256": "5faa6d56f72225233943aeb8f1e289efd5813363f3e5bd5ebe493ca94c791ef4",
+      "compiled_sha256": "009d118e8db07ec447993ed702c278a858063475d6084792738f1582f858ed81"
+    },
+    "lib/libqservice.so": {
+      "module": "libqservice",
+      "built": "out-trusty/target/product/m1/obj/lib/libqservice.so",
+      "source_directories": [
+        "hardware/qcom/display-caf/msm8916/libqservice"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libqservice.so",
+      "original_sha256": "9f1b6a7a8d1866d6191cc79eb8c471b893bafc93e7572249063dacaa6fcff0c9",
+      "compiled_sha256": "5e9c862352db25c4e2ec1baec3cdb6571a1bb4309461361a80c08bd171fe373c"
+    },
+    "lib/librmnetctl.so": {
+      "module": "librmnetctl",
+      "built": "out-trusty/target/product/m1/obj/lib/librmnetctl.so",
+      "source_directories": [
+        "vendor/qcom/opensource/dataservices/rmnetctl/src"
+      ],
+      "original_copied_source": "vendor/lge/m1/radio-stock/lib/librmnetctl.so",
+      "original_sha256": "946d6a0e4d390dc70acf2e8ff33e3c105643f8c864cdf6357cc03733b9f8203b",
+      "compiled_sha256": "eed5d0e616ab6d02fcbb46328d4da21bfb2abdb1e6a1a701f193f3271475dbaa"
+    },
+    "lib/libstagefrighthw.so": {
+      "module": "libstagefrighthw",
+      "built": "out-trusty/target/product/m1/obj/lib/libstagefrighthw.so",
+      "source_directories": [
+        "hardware/qcom/media-caf/msm8916/libstagefrighthw"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libstagefrighthw.so",
+      "original_sha256": "12b2b827c1d04152d7b2656b7d75e45013dad01307d7af6f6f634387ea19c3ae",
+      "compiled_sha256": "dbddea887e6136bc8e43b50b468fa9d11e4897cabfeaf9ee8c9627c23b6594b4"
+    },
+    "lib/libtinycompress.so": {
+      "module": "libtinycompress",
+      "built": "out-trusty/target/product/m1/obj/lib/libtinycompress.so",
+      "source_directories": [
+        "external/tinycompress"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libtinycompress.so",
+      "original_sha256": "363ca1b14847c44ae53e0d0320423504d528794eae37e0565af055757c83dc2e",
+      "compiled_sha256": "60db686bb3748e586c011364ff5f3b59324750e5a7b87746203941ffdd45de3c"
+    },
+    "lib/libtinyxml.so": {
+      "module": "libtinyxml",
+      "built": "out-trusty/target/product/m1/obj/lib/libtinyxml.so",
+      "source_directories": [
+        "external/tinyxml"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libtinyxml.so",
+      "original_sha256": "9ac99caee344ccbfc8d2fad1194da3481d7581fd19c76fc226e80048a0502b65",
+      "compiled_sha256": "d0ec5bc31b70623fec3a0b89b4c9eb354c0707e171760f15ee371fea58941e95"
+    },
+    "lib/libtinyxml2.so": {
+      "module": "libtinyxml2",
+      "built": "out-trusty/target/product/m1/obj/lib/libtinyxml2.so",
+      "source_directories": [
+        "external/tinyxml2"
+      ],
+      "original_copied_source": "vendor/lge/m1/proprietary/lib/libtinyxml2.so",
+      "original_sha256": "b5a7f84f6c037e3d950ce89715ea48af0d1dd68f0460ddf335285357ae85d588",
+      "compiled_sha256": "07a3a8403ef367b6dc76d376d819bd357e5812401dc1bb3ecf91c8d1da8fad3a"
+    }
+  },
+  "omitted_factory_inputs": {
+    "vendor/lib/libmmi.so": {
+      "source": "vendor/lge/m1/proprietary/vendor/lib/libmmi.so",
+      "sha256": "c7455931f880c4bc223819b7cafa38492a8c8aca35aaf2f4723657e2aaf9946f",
+      "reason": "No selected executable/library DT_NEEDED consumer or init service; depends on stock minui API. Original binary preserved."
+    }
+  }
+}

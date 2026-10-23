@@ -1,0 +1,6 @@
+*.mk text eol=lf
+proprietary/bin/qseecomd -text
+proprietary/bin/thermal-engine -text
+proprietary/bin/time_daemon -text
+proprietary/etc/thermal-engine-8909.conf text eol=lf
+proprietary/etc/thermal-engine-default.conf text eol=lf
