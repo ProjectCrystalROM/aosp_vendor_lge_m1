@@ -1,0 +1,30 @@
+[
+  {
+    "module": "GmsCore",
+    "package": "com.google.android.gms",
+    "version": "0.3.17.252432",
+    "version_code": 252432034,
+    "min_sdk": 19,
+    "url": "https://microg.org/fdroid/repo/com.google.android.gms-252432034.apk",
+    "sha256": "e5e6cba078bdec812b5450599350e5c1a12c8b7438da5bf77123af170f8c1a35",
+    "certificate_sha256": "9bd06727e62796c0130eb6dab39b73157451582cbd138e86c468acc395d14165",
+    "bytes": 108113833,
+    "cache_file": "com.google.android.gms-252432034.apk",
+    "fdroid_index_signer_field": "f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83",
+    "upstream_release_url": "https://github.com/microg/GmsCore/releases/download/v0.3.17.252432/com.google.android.gms-252432034.apk"
+  },
+  {
+    "module": "Phonesky",
+    "package": "com.android.vending",
+    "version": "0.3.17.40226",
+    "version_code": 84022634,
+    "min_sdk": 19,
+    "url": "https://microg.org/fdroid/repo/com.android.vending-84022634.apk",
+    "sha256": "9b8616011cc8f026bcbbe094df850794abb9d6d9f23214d7a8f8c4d1033ea012",
+    "certificate_sha256": "9bd06727e62796c0130eb6dab39b73157451582cbd138e86c468acc395d14165",
+    "bytes": 4210169,
+    "cache_file": "com.android.vending-84022634.apk",
+    "fdroid_index_signer_field": "f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83",
+    "upstream_release_url": "https://github.com/microg/GmsCore/releases/download/v0.3.17.252432/com.android.vending-84022634.apk"
+  }
+]
