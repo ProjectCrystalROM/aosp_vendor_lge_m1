@@ -1,25 +1,21 @@
 # K7 standalone WebView prebuilt
 
-Owner-provided com.google.android.webview 107.0.5304.36, code 530403610.
-Original source: webview_investigation in the bring-up workspace. See
-provenance.json for the immutable source hash and original signer fingerprint.
+**Clean-flash boot and Google login confirmed, 2026-10-24.** ADB verified the
+active package was the built-in `/system/app/K7WebView/K7WebView.apk`, version
+107.0.5304.36, without a `/data` update masking the ROM provider.
 
-This specific APK supports API23 through API28, ARMv7. The owner confirmed
-Google login after installing it as the alternate CM13 provider. A system-ROM
-installation still needs cold-boot/provider/login acceptance. Do not infer
-Android 6 compatibility from a version's major number or change its manifest.
+This is the owner's exact `com.google.android.webview` APK, versionCode
+530403610, minAPI23/maxAPI28, ARMv7. `provenance.json` records its original hash
+and signer. The compatibility finding applies to this artifact, not every
+release with the same major version.
 
-K7WebView overrides the original webview module in the focused radio product.
-CM13 already prefers the Google package, so no framework overlay/patch is
-needed. Keep PRESIGNED identity, all four native libraries, classes.dex and
-existing loader/support modules. Legacy build rules may change ZIP compression
-and alignment; every entry and the API23 v1 signature must remain intact.
+`K7WebView` overrides the old `webview` module in the focused K7 products. CM13
+already prefers the Google package; no provider-selection framework patch is
+needed. Preserve the original signing identity, classes and all four native
+libraries. Legacy build rules change ZIP compression/alignment, so audits check
+all entry contents, the API23/v1 signature and native-library alignment.
 
-Do not publish this candidate as hardware-qualified until the actual system
-provider is verified without an installed data update masking it. Official
-GApps login and microG login are separate acceptance checks. Current sign-in
-success is owner-reported for a separately installed copy, not a ROM test.
-
-2026-10-24 update: owner clean flash/factory reset, boot and login pass.
-ADB confirms the built-in system provider path and version, without a /data
-provider masking it. This supersedes the pending system-install status above.
+The known Open GApps 20220215 Pico cleanup lists preserve this module path.
+Other installers that supply WebView need checking for duplicate packages or
+an older replacement. The clean-flash login result supersedes the earlier
+separately installed APK test.

@@ -1,55 +1,57 @@
 # Pinned upstream microG prebuilts for K7 CM13
 
-Includes official microG Services 0.3.17.252432 (com.google.android.gms) and
-Companion 0.3.17.40226 (com.android.vending). Both have minimum API19 and support
-ARMv7. Companion supplies Play Store compatibility APIs; it is not a browsable
-app store. Also includes upstream GsfProxy v0.1.0 (com.google.android.gsf), verified by
-the owner to complete the Services Framework self-check. No unofficial
-installer, patched APK, bundled GApps, extra location backend, account or
-registration setting is included.
+## Current validation — 2026-10-24
 
-The owner's working phone APKs match these exact upstream release SHA-256
-hashes, independently checked against microg/GmsCore release asset digests.
-packages.json pins URLs, versions, hashes and the actual API23/v1 certificate.
-Keep PRESIGNED signing, all native ABIs and classes. Legacy build rules change
-ZIP compression/alignment; require identical entry contents and a valid v1
-signature/certificate after packaging. Neither framework signature-spoofing
-permission grants nor microG settings are silently changed by these modules.
-Use microG self-check/settings after first boot to grant permissions and enable
-registration/cloud messaging as desired. The product's no-screen provisioning
-lets the user reach these settings before login. Battery optimization settings
-remain user-configurable. CM13 does not parse newer default-permissions or
-privapp-permissions XML grant mechanisms, so none are copied blindly.
+| Component | Version | Result |
+| --- | --- | --- |
+| Services / `com.google.android.gms` | 0.3.17.252432 | Bundled system app; owner self-check passes |
+| Companion / `com.android.vending` | 0.3.17.40226 | Bundled system app; owner self-check passes |
+| GsfProxy / `com.google.android.gsf` | v0.1.0 | Approved standalone upstream install; owner confirms Services Framework checkbox now checked |
 
-APK inputs are generated/ignored, not committed (Services exceeds GitHub's
-single-file limit). From this directory, run:
+Services/Companion match both the owner's working APKs and the official
+GmsCore release asset hashes. GsfProxy matches its official release download
+and the upstream F-Droid index hash. All original v1 signing identities and
+payloads are verified. `packages.json` pins exact inputs and certificate hashes.
 
-    python3 stage.py --fetch
+The latest flashed ROM includes Services/Companion and corrected no-screen
+Provision. GsfProxy is currently a separate `/data` app on that phone. Current
+source includes it for future ROMs; its normal system-app prebuilt compiles and
+passes signed-content checks, but that system installation is not yet tested.
+The corrected Provision path reaches home and sets both setup flags. Login on
+the newest bundled-microG candidate has not yet been reported; the earlier
+WebView107 login result is recorded separately.
 
-Or stage the exact files from an existing trusted cache without networking:
+## Stage build inputs
 
-    python3 stage.py --cache /path/to/cache
+The APKs are generated/ignored, not committed; Services exceeds GitHub's
+single-file limit. From the vendor repository root:
 
-Mirror the generated APKs to the build-tree module with --mirror if using a
-separate canonical repository. All cached/downloaded bytes are checked against
-the pinned SHA-256 values before use; source or signer replacement is forbidden.
-The usual build needs no network after staging. No private signing keys needed.
+```sh
+python3 microg/stage.py --fetch
+# Or stage exact pinned files offline:
+python3 microg/stage.py --cache /path/to/cache
+```
 
-The intended first ROM test is a clean installation without the separate
-microG installer ZIP, checking self-check, registration and sign-in. Runtime
-APK equality is not qualification of the new ROM package's default grants or
-first-boot path. Do not remove the owner's current APKs/data as a shortcut.
+Use `--mirror /path/to/build/vendor/lge/m1/microg` for a separate build checkout.
+Every cached/downloaded input is hash-checked before use. No private signing
+keys or implicit build-time download are required after staging.
 
-References:
-https://github.com/microg/GmsCore/releases/tag/v0.3.17.252432
-https://github.com/microg/GmsCore/wiki/Installation
+## Packaging boundaries
 
-2026-10-24 hardware result: owner confirms corrected Provision direct-home
-boot/Recents and Services/Companion self-check pass. ADB confirms both setup
-flags1 and Provision self-disable. Login on this particular candidate is not
-yet reported. The optional GSF row is a separate component/test.
+Services/Companion are PRESIGNED privileged apps; GsfProxy is a PRESIGNED normal
+system app. Keep all original classes and native ABIs. CM13 repacks ZIP
+compression/alignment; audit identical entry contents, the API23/v1 signature
+and native layout. GsfProxy's older SHA1 JAR signature is checked alongside its
+pinned whole-APK SHA256; Services/Companion use SHA256 JAR digests.
 
-GsfProxy inclusion follows an approved standalone installation and owner
-confirmation of the checked Services Framework row. Its future system-app
-packaging is compile/byte-checked separately; the current qualified ROM lacks
-that APK and has the separately installed /data copy.
+No unofficial installer scripts, extra location backend, account, registration
+setting or automatic runtime/spoofing-permission grant is included. CM13 does
+not implement newer default-permissions/privapp-permissions XML grant handling,
+so those installer files are not copied blindly. The product's direct-home
+setup permits microG configuration before login.
+
+A full bundled-install test should distinguish ROM APKs from retained `/data`
+updates or addon.d restores. Existing rollback checkpoints are retained in the
+bring-up workspace. References: [GmsCore release](https://github.com/microg/GmsCore/releases/tag/v0.3.17.252432),
+[GsfProxy release](https://github.com/microg/GsfProxy/releases/tag/v0.1.0),
+[upstream installation notes](https://github.com/microg/GmsCore/wiki/Installation).
