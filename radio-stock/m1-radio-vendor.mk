@@ -46,13 +46,13 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m1/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     vendor/lge/m1/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
     vendor/lge/m1/proprietary/etc/firmware/nfc_test.bin:system/etc/firmware/nfc_test.bin \
-    vendor/lge/m1/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
-    vendor/lge/m1/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
-    vendor/lge/m1/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
-    vendor/lge/m1/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03 \
-    vendor/lge/m1/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
-    vendor/lge/m1/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
-    vendor/lge/m1/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
+    vendor/lge/m1/video-stock/venus.b00:system/etc/firmware/venus.b00 \
+    vendor/lge/m1/video-stock/venus.b01:system/etc/firmware/venus.b01 \
+    vendor/lge/m1/video-stock/venus.b02:system/etc/firmware/venus.b02 \
+    vendor/lge/m1/video-stock/venus.b03:system/etc/firmware/venus.b03 \
+    vendor/lge/m1/video-stock/venus.b04:system/etc/firmware/venus.b04 \
+    vendor/lge/m1/video-stock/venus.mbn:system/etc/firmware/venus.mbn \
+    vendor/lge/m1/video-stock/venus.mdt:system/etc/firmware/venus.mdt \
     vendor/lge/m1/proprietary/etc/firmware/wlan/prima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     vendor/lge/m1/radio-stock/etc/rssi.xml:system/etc/rssi.xml \
     vendor/lge/m1/radio-stock/etc/sec_config:system/etc/sec_config \
