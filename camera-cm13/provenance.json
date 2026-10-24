@@ -1,0 +1,10 @@
+{
+  "donor_zip": "lineage-13.0-20170313-UNOFFICIAL-h631.zip",
+  "zip_sha256": "82b87241251b6ab545a2ae0a87c0d70803e746047b213c21023b23e9894a382a",
+  "files": {
+    "libmmcamera2_stats_algorithm_sensors.so": "2f0597f353a5dca48c47729bc0d19fe58c0ef6cc08f250716fc2d0a2fe95b08c",
+    "libqomx_jpegenc.so": "6c921c859f92ccb60519610601ae299c170278802b0b6d56617f55fd1f5e01e0",
+    "libmmqjpeg_codec.so": "ce5163c69000c77d3030d3b692e02a737684f6524d0038601bcd3b670203d367"
+  },
+  "qualification": "Owner clean-wipe boot: home screen, Wi-Fi setup association, Bluetooth re-pair/audio, stock Camera2 front/rear still saving; packaged daemon/heap/sensors confirmed by read-only ADB. Video/flash/AF/full profile coverage remain unqualified."
+}

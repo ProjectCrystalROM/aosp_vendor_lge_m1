@@ -16,6 +16,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/lge/m1/proprietary/lib/hw/sensors.msm8909.so:system/lib/hw/sensors.msm8909.so \
+    vendor/lge/m1/proprietary/lib/hw/camera.msm8909.so:system/lib/hw/camera.msm8909.so \
     vendor/lge/m1/proprietary/lib/libstlport.so:system/lib/libstlport.so \
     vendor/lge/m1/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/lge/m1/proprietary/bin/thermal-engine:system/bin/thermal-engine \

@@ -190,11 +190,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m1/proprietary/lib/libvss_sar_qcci.so:system/lib/libvss_sar_qcci.so \
     vendor/lge/m1/proprietary/lib/libwcnftm.so:system/lib/libwcnftm.so \
     vendor/lge/m1/proprietary/lib/libwfcu.so:system/lib/libwfcu.so \
-    vendor/lge/m1/proprietary/lib/libwifi-hal-qcom.so:system/lib/libwifi-hal-qcom.so \
     vendor/lge/m1/proprietary/lib/libwifiext_jni.so:system/lib/libwifiext_jni.so \
     vendor/lge/m1/proprietary/lib/libwifilgeext_jni.so:system/lib/libwifilgeext_jni.so \
     vendor/lge/m1/proprietary/lib/libwifilgehidden_jni.so:system/lib/libwifilgehidden_jni.so \
-    vendor/lge/m1/proprietary/lib/libwpa_client.so:system/lib/libwpa_client.so \
     vendor/lge/m1/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/lge/m1/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/lge/m1/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -301,7 +299,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m1/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
     vendor/lge/m1/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
     vendor/lge/m1/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
-    vendor/lge/m1/proprietary/vendor/lib/libmmcamera2_stats_algorithm_sensors.so:system/vendor/lib/libmmcamera2_stats_algorithm_sensors.so \
+    vendor/lge/m1/camera-cm13/libmmcamera2_stats_algorithm_sensors.so:system/vendor/lib/libmmcamera2_stats_algorithm_sensors.so \
     vendor/lge/m1/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
     vendor/lge/m1/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
     vendor/lge/m1/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
@@ -324,7 +322,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m1/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/lge/m1/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/lge/m1/proprietary/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
-    vendor/lge/m1/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
+    vendor/lge/m1/camera-cm13/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/lge/m1/proprietary/vendor/lib/libmmrtpdecoder.so:system/vendor/lib/libmmrtpdecoder.so \
     vendor/lge/m1/proprietary/vendor/lib/libmmrtpencoder.so:system/vendor/lib/libmmrtpencoder.so \
     vendor/lge/m1/radio-stock/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
@@ -347,7 +345,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m1/radio-stock/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/lge/m1/proprietary/vendor/lib/libqmiservices_ext.so:system/vendor/lib/libqmiservices_ext.so \
     vendor/lge/m1/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
-    vendor/lge/m1/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
+    vendor/lge/m1/camera-cm13/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/lge/m1/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/lge/m1/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/lge/m1/radio-stock/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
