@@ -19,3 +19,7 @@ Do not publish this candidate as hardware-qualified until the actual system
 provider is verified without an installed data update masking it. Official
 GApps login and microG login are separate acceptance checks. Current sign-in
 success is owner-reported for a separately installed copy, not a ROM test.
+
+2026-10-24 update: owner clean flash/factory reset, boot and login pass.
+ADB confirms the built-in system provider path and version, without a /data
+provider masking it. This supersedes the pending system-install status above.

@@ -8,5 +8,6 @@
   "max_sdk": 28,
   "abi": "armeabi-v7a",
   "certificate_sha256": "6faf3c4140407473400934d117815a21af1cfefc5c0bee61c858bc3d72ba6fe5",
-  "system_install_hardware_verified": false
+  "system_install_hardware_verified": true,
+  "validation": "Owner clean flash/factory reset and successful login; ADB confirms system K7WebView path, version107.0.5304.36 and BOOT_COMPLETED"
 }
