@@ -3,8 +3,10 @@
 Includes official microG Services 0.3.17.252432 (com.google.android.gms) and
 Companion 0.3.17.40226 (com.android.vending). Both have minimum API19 and support
 ARMv7. Companion supplies Play Store compatibility APIs; it is not a browsable
-app store. No unofficial installer, patched APK, bundled GApps, legacy C2DM
-proxy, extra location backend, account or registration setting is included.
+app store. Also includes upstream GsfProxy v0.1.0 (com.google.android.gsf), verified by
+the owner to complete the Services Framework self-check. No unofficial
+installer, patched APK, bundled GApps, extra location backend, account or
+registration setting is included.
 
 The owner's working phone APKs match these exact upstream release SHA-256
 hashes, independently checked against microg/GmsCore release asset digests.
@@ -46,3 +48,8 @@ https://github.com/microg/GmsCore/wiki/Installation
 boot/Recents and Services/Companion self-check pass. ADB confirms both setup
 flags1 and Provision self-disable. Login on this particular candidate is not
 yet reported. The optional GSF row is a separate component/test.
+
+GsfProxy inclusion follows an approved standalone installation and owner
+confirmation of the checked Services Framework row. Its future system-app
+packaging is compile/byte-checked separately; the current qualified ROM lacks
+that APK and has the separately installed /data copy.
