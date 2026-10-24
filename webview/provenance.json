@@ -1,0 +1,12 @@
+{
+  "source": "Owner-provided webview_investigation APK; owner confirms login succeeds when installed as alternate provider",
+  "sha256": "197c2cdac1b1d36c423663d0b06c4ba25f375b858ea4b44dea1314f1c6b3b829",
+  "version": "107.0.5304.36",
+  "package": "com.google.android.webview",
+  "version_code": 530403610,
+  "min_sdk": 23,
+  "max_sdk": 28,
+  "abi": "armeabi-v7a",
+  "certificate_sha256": "6faf3c4140407473400934d117815a21af1cfefc5c0bee61c858bc3d72ba6fe5",
+  "system_install_hardware_verified": false
+}
