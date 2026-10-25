@@ -1,6 +1,6 @@
 # Pinned upstream microG prebuilts for K7 CM13
 
-## Current validation — 2026-10-24
+## Current validation — 2026-10-25
 
 | Component | Version | Result |
 | --- | --- | --- |
@@ -13,13 +13,13 @@ GmsCore release asset hashes. GsfProxy matches its official release download
 and the upstream F-Droid index hash. All original v1 signing identities and
 payloads are verified. `packages.json` pins exact inputs and certificate hashes.
 
-The latest flashed ROM includes Services/Companion and corrected no-screen
-Provision. GsfProxy is currently a separate `/data` app on that phone. Current
-source includes it for future ROMs; its normal system-app prebuilt compiles and
-passes signed-content checks, but that system installation is not yet tested.
-The corrected Provision path reaches home and sets both setup flags. Login on
-the newest bundled-microG candidate has not yet been reported; the earlier
-WebView107 login result is recorded separately.
+The current normal cm_m1 ROM packages all three pinned APKs, WebView107 and
+corrected no-screen Provision. GsfProxy was initially qualified through a
+separate upstream install; current system payload and signature audits verify
+its inclusion. A retained /data update can still shadow its ROM copy.
+Provision sets Android's two setup flags plus CM's separate setup-completed
+flag for Home. Login and self-check results were confirmed during bring-up;
+these do not imply a fresh account-registration test after every build.
 
 ## Stage build inputs
 
