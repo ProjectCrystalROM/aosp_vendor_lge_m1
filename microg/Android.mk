@@ -11,6 +11,17 @@ LOCAL_MODULE_SUFFIX := .apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MULTILIB := 32
 LOCAL_SRC_FILES := GmsCore.apk
+# API22 cannot dlopen native libraries from APK ZIP entries. Keep the signed
+# APK intact and install exact upstream native files through CM12's JNI rules.
+ifeq ($(PLATFORM_SDK_VERSION),22)
+LOCAL_PREBUILT_JNI_LIBS := \
+    GmsCore-jni/armeabi-v7a/libc++_shared.so \
+    GmsCore-jni/armeabi-v7a/libconscrypt_gmscore_jni.so \
+    GmsCore-jni/armeabi-v7a/libcronet.102.0.5005.125.so \
+    GmsCore-jni/armeabi-v7a/libimage_processing_util_jni.so \
+    GmsCore-jni/armeabi-v7a/libmapbox-gl.so \
+    GmsCore-jni/armeabi-v7a/libopencv_java4.so
+endif
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_DEX_PREOPT := false

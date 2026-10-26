@@ -1,3 +1,13 @@
+# CM12.1 packaging note
+
+Stage with `python3 microg/stage.py --cache /path/to/cache --extract-arm-jni`
+(or use `--fetch --extract-arm-jni`). Lollipop needs the original ARM JNI files
+installed in the app-specific lib/arm directory. The signed upstream APK stays
+intact. Generated *-jni directories and APKs are not committed. Runtime validation
+is pending; earlier CM13 acceptance follows as historical context.
+
+---
+
 # Pinned upstream microG prebuilts for K7 CM13
 
 ## Current validation — 2026-10-25

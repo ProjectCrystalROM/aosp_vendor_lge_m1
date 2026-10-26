@@ -6,12 +6,14 @@ import json
 from pathlib import Path
 import shutil
 import tempfile
+from zipfile import ZipFile
 from urllib.request import urlopen
 
 MODULE = Path(__file__).resolve().parent
 parser = argparse.ArgumentParser()
 parser.add_argument('--cache', type=Path)
 parser.add_argument('--fetch', action='store_true')
+parser.add_argument('--extract-arm-jni', action='store_true', help='Stage separate ARM libraries for Lollipop system apps without modifying signed APKs')
 parser.add_argument('--mirror', type=Path)
 args = parser.parse_args()
 
@@ -39,4 +41,19 @@ for item in json.loads((MODULE / 'packages.json').read_text()):
     if args.mirror:
         args.mirror.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(target, args.mirror / target.name)
+    if args.extract_arm_jni:
+        with ZipFile(target) as apk:
+            for name in apk.namelist():
+                if not name.startswith('lib/armeabi-v7a/') or not name.endswith('.so'):
+                    continue
+                assert name.count('/') == 2, name
+                relative = Path(item['module'] + '-jni/armeabi-v7a') / Path(name).name
+                output = MODULE / relative
+                output.parent.mkdir(parents=True, exist_ok=True)
+                payload = apk.read(name)
+                output.write_bytes(payload)
+                if args.mirror:
+                    mirrored = args.mirror / relative
+                    mirrored.parent.mkdir(parents=True, exist_ok=True)
+                    mirrored.write_bytes(payload)
     print(item['module'], item['version'], item['sha256'])

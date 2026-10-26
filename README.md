@@ -1,3 +1,14 @@
+# CM12.1 vendor branch — experimental
+
+This branch selects original K7 camera sensor/JPEG and peripheral-client
+libraries for CM12.1; CM13 donor files are retained as reference inputs only.
+The ROM WebView is used. Stage the pinned microG APKs with microg/stage.py;
+they are generated inputs and retain their original signing identities.
+Build/runtime validation is in progress; older CM13 acceptance below does not
+qualify CM12.1.
+
+---
+
 # LG K7 MS330 vendor inputs for CM13
 
 **2026-10-25: selected inputs are qualified in the enforcing `cm_m1-userdebug`
