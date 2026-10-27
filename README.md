@@ -1,3 +1,13 @@
+# DSI cellular-data fix qualified — 2026-10-26
+
+Restores the omitted stock /system/etc/data/dsi_config.xml, keeping all stock
+profile values. XML declaration is moved before the opening comment only.
+CM13 live test initialized DSI and established LTE after correct APN selection.
+CM12 full signed ROM passed LTE browser access and YouTube streaming after
+reboot. No APN guessing, modem firmware replacement or RIL shim is required
+by this fix. APN selection must match the actual carrier subscription.
+Raw subscriber/location logs and private signing keys are not published.
+
 # CM12.1 vendor branch — experimental
 
 This branch selects original K7 camera sensor/JPEG and peripheral-client
