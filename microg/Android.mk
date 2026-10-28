@@ -1,6 +1,6 @@
 # Pinned upstream microG; keep original signing identities.
 LOCAL_PATH := $(call my-dir)
-ifneq ($(filter cm_m1 cm_m1_radio cm_m1_radio_noselinux,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosp_m1 cm_m1 cm_m1_radio cm_m1_radio_noselinux,$(TARGET_PRODUCT)),)
 ifeq ($(TARGET_DEVICE),m1)
 ifeq ($(TARGET_ARCH),arm)
 
