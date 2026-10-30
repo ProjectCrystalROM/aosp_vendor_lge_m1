@@ -1,67 +1,22 @@
-# CM12.1 packaging note
+# Pinned microG inputs for Project Crystal AOSP5.1.1
 
-Stage with `python3 microg/stage.py --cache /path/to/cache --extract-arm-jni`
-(or use `--fetch --extract-arm-jni`). Lollipop needs the original ARM JNI files
-installed in the app-specific lib/arm directory. The signed upstream APK stays
-intact. Generated *-jni directories and APKs are not committed. Runtime validation
-is pending; earlier CM13 acceptance follows as historical context.
-
----
-
-# Pinned upstream microG prebuilts for K7 CM13
-
-## Current validation — 2026-10-25
-
-| Component | Version | Result |
-| --- | --- | --- |
-| Services / `com.google.android.gms` | 0.3.17.252432 | Bundled system app; owner self-check passes |
-| Companion / `com.android.vending` | 0.3.17.40226 | Bundled system app; owner self-check passes |
-| GsfProxy / `com.google.android.gsf` | v0.1.0 | Approved standalone upstream install; owner confirms Services Framework checkbox now checked |
-
-Services/Companion match both the owner's working APKs and the official
-GmsCore release asset hashes. GsfProxy matches its official release download
-and the upstream F-Droid index hash. All original v1 signing identities and
-payloads are verified. `packages.json` pins exact inputs and certificate hashes.
-
-The current normal cm_m1 ROM packages all three pinned APKs, WebView107 and
-corrected no-screen Provision. GsfProxy was initially qualified through a
-separate upstream install; current system payload and signature audits verify
-its inclusion. A retained /data update can still shadow its ROM copy.
-Provision sets Android's two setup flags plus CM's separate setup-completed
-flag for Home. Login and self-check results were confirmed during bring-up;
-these do not imply a fresh account-registration test after every build.
-
-## Stage build inputs
-
-The APKs are generated/ignored, not committed; Services exceeds GitHub's
-single-file limit. From the vendor repository root:
+The API22 ROM packages GmsCore0.3.17.252432, Phonesky0.3.17.40226 and GsfProxy0.1.0.
+`packages.json` pins original download URLs, hashes and signing certificate hashes.
+The platform fork supplies the separately required signature-spoofing and native
+compatibility changes; packaging these APKs alone does not implement them.
 
 ```sh
-python3 microg/stage.py --fetch
-# Or stage exact pinned files offline:
-python3 microg/stage.py --cache /path/to/cache
+python3 microg/stage.py --fetch --extract-arm-jni
+# Or provide the exact files from a local cache:
+python3 microg/stage.py --cache /path/to/cache --extract-arm-jni
 ```
 
-Use `--mirror /path/to/build/vendor/lge/m1/microg` for a separate build checkout.
-Every cached/downloaded input is hash-checked before use. No private signing
-keys or implicit build-time download are required after staging.
+On API22, native libraries are installed under the app-specific lib/arm directory.
+Keep the original signed APK payload intact; do not strip JNI from the signed APK
+or re-sign these apps with the ROM keys. GmsCore/Companion are privileged packages;
+GsfProxy is a normal system package. Generated APK/native files are not committed.
 
-## Packaging boundaries
-
-Services/Companion are PRESIGNED privileged apps; GsfProxy is a PRESIGNED normal
-system app. Keep all original classes and native ABIs. CM13 repacks ZIP
-compression/alignment; audit identical entry contents, the API23/v1 signature
-and native layout. GsfProxy's older SHA1 JAR signature is checked alongside its
-pinned whole-APK SHA256; Services/Companion use SHA256 JAR digests.
-
-No unofficial installer scripts, extra location backend, account, registration
-setting or automatic runtime/spoofing-permission grant is included. CM13 does
-not implement newer default-permissions/privapp-permissions XML grant handling,
-so those installer files are not copied blindly. The product's direct-home
-setup permits microG configuration before login.
-
-A full bundled-install test should distinguish ROM APKs from retained `/data`
-updates or addon.d restores. Existing rollback checkpoints are retained in the
-bring-up workspace. References: [GmsCore release](https://github.com/microg/GmsCore/releases/tag/v0.3.17.252432),
-[GsfProxy release](https://github.com/microg/GsfProxy/releases/tag/v0.1.0),
-[upstream installation notes](https://github.com/microg/GmsCore/wiki/Installation).
+Owner confirmed actual CrystalGram push delivery through microG on the AOSP build.
+That is not a claim that every microG service, account flow or self-check was
+retested on every release. App data/configuration still requires normal setup.
+No runtime grant/deny permission UI is introduced on Lollipop.
